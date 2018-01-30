@@ -16,14 +16,10 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav-header-between-pink {
-  background-color: #FD739C;
-}
-
 h1 {
   line-height: 50px;
 }
 
-section {
+.landing-section-whoami {
   padding-top: 100px;
 }
