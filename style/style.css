@@ -1,13 +1,29 @@
-* {
+body {
   font-size: 22px;
   line-height: 34px;
 }
-header {
+
+header,
+nav {
   background-color: #FD739C;
   color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 120px;
 }
 
 h1, 
 h2 {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-header-between-pink {
+  background-color: #FD739C;
+}
+
+h1 {
+  line-height: 50px;
+}
+
+section {
+  padding-top: 100px;
 }
