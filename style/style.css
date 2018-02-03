@@ -1,15 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-.container {
-  width: 976px;
-  margin-left: auto;
-  margin-right: auto;
+.row {
   display: flex;
-  flex-wrap: wrap;
-  background: rgb(215, 215, 255);
-  line-height: 72px;
+  height: 72px;
+  align-items: center;
 }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
@@ -22,25 +27,237 @@ body {
 .col-2  { flex-basis: 16.6666% }
 .col-3  { flex-basis: 24.9999% }
 .col-4  { flex-basis: 33.3333% }
-.col-5  { flex-basis: 41,6666% }
+.col-5  { flex-basis: 41.6666% }
 .col-6  { flex-basis: 50% }
-.col-7  { flex-basis: 58,3333% }
-.col-8  { flex-basis: 66,6666% }
+.col-7  { flex-basis: 58.3333% }
+.col-8  { flex-basis: 66.6666% }
 .col-9  { flex-basis: 74.9999% }
-.col-10 { flex-basis: 80,3333% }
-.col-11 { flex-basis: 91,6666% }
+.col-10 { flex-basis: 80.3333% }
+.col-11 { flex-basis: 91.6666% }
 .col-12 { flex-basis: 100% }
 
-.logo {
-  width: 121px;
-  height: 13px;
-  padding-left: 0;
+.header {
+  width: 100%;
+  border-bottom: 2px solid rgba(38, 38, 38, 0.16); /* FIXME */
 }
 
-.main-header {
-  width: 100%;
+.container {
+  width: 976px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  background-color: rgb(219, 255, 255);
   height: 72px;
-  position: fixed;
-  z-index: 1;
-  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.delivery_form {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: bisque;
+  height: 72px;
+}
+
+.delivery_time {
+  width: 65px;
+  height: 40px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  text-align-last: center;
+  text-align: center;
+  border: #E0E0E0 1px solid;
+  border-radius: 2px;
+  font-size: 16px;
+  color: #1D1D1D;
+}
+
+.delivery_label {
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.delivery_adress {
+  width: 292px;
+  height: 40px;
+  border: #E0E0E0 1px solid;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1D;
+  padding-left: 36px;
+  background-image: url(../images/shape.png);
+  background-repeat: no-repeat;
+  background-position: 12px;
+}
+
+.delivery_buttons {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 16px 16px;
+  background: rgb(216, 255, 232);
+}
+
+.delivery_buttons_singin {
+  width: 80px;
+  height: 40px;
+  color: #1D1D1D;
+  border: #E0E0E0 1px solid;
+  border-radius: 2px;
+  margin-right: 16px;
+}
+
+.delivery_buttons_register {
+  width: 80px;
+  height: 40px;
+  color: #FFF;
+  border: #262626 1px solid;
+  border-radius: 2px;
+  background: #262626;
+  margin-right: 27px;
+}
+
+.main {
+  width: 100%;
+}
+
+.container_main {
+  width: 976px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row_main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.search_restaurants {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  background: rgb(223, 223, 255);
+  height: 47px;
+  align-items: center;
+  margin-top: 32px;
+  border-bottom: #757575 1px solid;
+  box-sizing: border-box;
+}
+
+.search_restaurants_shape {
+  width: 22px;
+  height: 21.9px;
+}
+
+.search_restaurants_input {
+  width: 230px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #626262;
+  background: #FFF;
+  outline: none;
+  border: #FFF 0px solid;
+  margin-left: 8px;
+}
+
+.moscow_rests_title {
+  font-size: 22px;
+  line-height: 34px;
+  color: #1D1D1D;
+  background: rgb(255, 196, 196);
+  margin-top: 56px;
+  margin-bottom: 16px;
+}
+
+.moscow_rests {
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  background: #d4e6ff;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.rests_name {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1D;
+  margin-top: 16px;
+}
+
+.rests_typeoffood {
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+}
+
+.rests_timeofcooking {
+  font-size: 13px;
+  line-height: 21px;
+  color: #1D1D1D;
+}
+
+.footer {
+  width: 100%;
+  background: #262626;
+}
+
+.container_footer {
+  width: 976px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row_footer {
+  display: flex;
+  flex-flow: column nowrap;
+  box-sizing: border-box;
+}
+
+.footer_logo {
+  border-bottom: 1px solid #FFF;
+}
+
+.logo_footer_image {
+  width: 192px;
+  height: 20px;
+  margin-top: 56px;
+  margin-bottom: 40px;
+}
+
+.footer_contacts_row {
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  color: #FFF;
+}
+
+.footer_language_select {
+  width: 227px;
+  height: 40px;
+  margin-top: 32px;
+  background: #3B3B3B;
+  font-size: 13px;
+  line-height: 15px;
+  color: #FFF;
+  border: #3B3B3B 0px solid;
+  border-radius: 2px;
+  margin-left: -8px;
+  cursor: pointer;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 48px;
 }

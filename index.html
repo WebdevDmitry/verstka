@@ -8,21 +8,135 @@
   </head>
 
   <body>
-    <header class="main-header">
+    <header class="header">
       <div class="container">
-        <div class="col-3">
-          <img src="./images/logo.svg" class="logo" alt="logo">
-        </div>
-        <div class="col-1">
-            asap
-        </div>
-        <div class="col-4">
-            adress
-        </div>
-        <div class="col-4">
-            signin register bag
+        <div class="row">
+          <div class="col-3">
+            <div class="logo">
+              <a href="#">
+                <img src="images/logo.svg" alt="logo">
+              </a>
+            </div>
+          </div>
+          <div class="col-5">
+           <div class="delivery_form">
+             <form>
+               <select class="delivery_time">
+                 <option value="ASAP">ASAP</option>
+               </select>
+               <label class="delivery_label">to</label>
+              <input class="delivery_adress" type="text" placeholder="ul. Bolshaya Dmitrovka,22">
+             </form>
+           </div>
+          </div>
+          <div class="col-4">
+            <div class="delivery_buttons">
+              <button class="delivery_buttons_singin">Sign In</button>
+              <button class="delivery_buttons_register">Register</button>
+                <input type="image"  class="delivery_buttons_basket" src="images/basket.png" alt="basket">
+            </div>
+          </div>
         </div>
       </div>
     </header>
+
+    <main class="main"> <!-- MAIN BLOCK -->
+      <div class="container_main"> <!-- CONTAINER MAIN -->
+        <div class="row_main"> <!-- ROW MAIN FLEXBOX COLUMN!!! -->
+          <div class="col-12">
+            <section class="search_restaurants"> <!-- SEARCH RESTAURANTS BLOCK -->
+              <form>
+                <input type="image" src="images/shape.png" class="search_restaurants_shape" alt="search">
+                <input type="text" class="search_restaurants_input" placeholder="Search for restaurant or cuisine">
+              </form>
+            </section>
+          <p class="moscow_rests_title">
+            Moscow Restaurants
+          </p>
+          <section class="moscow_rests">
+            <div class="col-4">
+              <img src="images/img1.png" width="100%">
+              <p class="rests_name">Макдональдс &mdash; Газетный</p>
+              <p class="rests_typeoffood">₽₽ 	&middot; Burgers</p>
+              <p class="rests_timeofcooking">25 - 35 Min</p>
+            </div>
+            <div class="col-4">
+                <img src="images/img2.png" width="100%">
+                <p class="rests_name">DimSum & Co &mdash; ЦДМ</p>
+                <p class="rests_typeoffood">₽	&middot; Японская &middot; Китайская &middot; Азиатская</p>
+                <p class="rests_timeofcooking">40 - 50 Min</p>
+            </div>
+            <div class="col-4">
+                <img src="images/img3.png" width="100%">
+                <p class="rests_name">ДвижОК &mdash; Манежная</p>
+                <p class="rests_typeoffood">₽	&middot; Американская &middot; Европейская</p>
+                <p class="rests_timeofcooking">35 - 45 Min</p>
+            </div>
+            <div class="col-4">
+                <img src="images/img4.png" width="100%">
+                <p class="rests_name">НЯ &mdash; NHA</p>
+                <p class="rests_typeoffood">₽₽	&middot; Вьетнамская</p>
+                <p class="rests_timeofcooking">30 - 40 Min</p>
+            </div>
+            <div class="col-4">
+                <img src="images/img5.png" width="100%">
+                <p class="rests_name">Точка Дзы &mdash; Цветной</p>
+                <p class="rests_typeoffood">₽₽	&middot; Вьетнамская</p>
+                <p class="rests_timeofcooking">40 - 50 Min</p>
+            </div>
+            <div class="col-4">
+                <img src="images/img6.png" width="100%">
+                <p class="rests_name">Cinnabon</p>
+                <p class="rests_typeoffood">₽	&middot; Выпечка &middot; Десерты &middot; Капкейки</p>
+                <p class="rests_timeofcooking">25 - 35 Min</p>
+            </div>
+            <div class="col-4">
+                <img src="images/img7.png" width="100%">
+                <p class="rests_name">PIZZALOVE</p>
+                <p class="rests_typeoffood">₽₽	&middot; Пицца</p>
+                <p class="rests_timeofcooking">15 - 25 Min</p>
+            </div>
+            <div class="col-4">
+                <img src="images/img8.png" width="100%">
+                <p class="rests_name">Zю кафе &mdash; Тверская</p>
+                <p class="rests_typeoffood">₽₽	&middot; Японская</p>
+                <p class="rests_timeofcooking">25 - 35 Min</p>
+            </div>
+            <div class="col-4">
+                <img src="images/img9.png" width="100%">
+                <p class="rests_name">Bar BQ Cafe &mdash; Манежная</p>
+                <p class="rests_typeoffood">₽₽₽	&middot; Европейская</p>
+                <p class="rests_timeofcooking">30 - 40 Min</p>
+            </div>
+          </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container_footer">
+        <div class="row_footer">
+          <div class="col-12">
+            <div class="footer_logo">
+              <img class="logo_footer_image" src="images/logo_footer.png" alt="UBER EATS">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="footer_contacts_row">
+              <div class="col-4">
+               <form>
+                 <select class="footer_language_select">
+                   <option value="ENGLISH">ENGLISH</option>
+                   <option value="RUSSIAN">RUSSIAN</option>
+                 </select>
+               </form> 
+              </div>
+              <div class="col-4">2</div>
+              <div class="col-4">3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
