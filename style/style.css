@@ -193,6 +193,7 @@ body {
 .delivery_time {
   width: 65px;
   height: 40px;
+  appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   text-align-last: center;
@@ -355,7 +356,7 @@ body {
 }
 
 .search_restaurants_input {
-  width: 230px;
+  width: 240px;
   font-size: 16px;
   line-height: 24px;
   color: #626262;
@@ -395,6 +396,7 @@ body {
 .delivery_small_time {
   width: 65px;
   height: 40px;
+  appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   text-align-last: center;
@@ -467,6 +469,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #626262;
+  margin-top: 4px;
 }
 
 .rests_timeofcooking {
@@ -474,6 +477,7 @@ body {
   line-height: 21px;
   color: #1D1D1D;
   margin-bottom: 36px;
+  margin-top: 4px;
 }
                                   /* FOOTER */
 .footer {
